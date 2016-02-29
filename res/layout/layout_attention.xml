@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayness">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/home_address_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="定位"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/home_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/home_address_attention"
+            android:text="我关注的中心"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <cn.ledoing.view.NoScrollListView
+        android:id="@+id/home_attention_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#fff"
+        >
+    </cn.ledoing.view.NoScrollListView>
+
+</LinearLayout>

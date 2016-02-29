@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_updatephoneverificationcode_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_updatephoneverificationcode_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lc_updatephoneverificationcode_title" >
+
+        <RelativeLayout
+            android:id="@+id/lc_updatephoneverificationcode_all"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/selet_title" />
+
+            <EditText
+                android:id="@+id/lc_uodatephoneverification_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="请填写收到的验证码"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/gray"
+                android:textSize="14dp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/lc_submit_verification"
+                android:layout_width="66dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/logon_yanzheng"
+                android:text="提交"
+                android:textColor="@color/selet_title"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lc_uodatephoneverification_unreceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lc_updatephoneverificationcode_all"
+            android:layout_below="@+id/lc_updatephoneverificationcode_all"
+            android:layout_marginTop="27dp"
+            android:text="没收到？重新获取验证码"
+            android:textColor="@color/selet_title"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_uodatephoneverification_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_updatephoneverificationcode_title" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

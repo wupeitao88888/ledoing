@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/colorcube"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lc_leftMenu_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/jxb_userinfo_bg_select">
+
+            <ImageView
+                android:id="@+id/lc_leftmenu_usericon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/hand" />
+
+            <TextView
+                android:id="@+id/lc_leftmenu_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lc_leftmenu_usericon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="请先登录"
+                android:textColor="@drawable/jxb_text_normal" />
+
+            <TextView
+                android:id="@+id/lc_leftmenu_userage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lc_leftmenu_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="0岁"
+                android:textColor="@drawable/jxb_text_normal"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#DCDCDC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_leftmenu_mecode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/jxb_userinfo_bg_select">
+
+            <ImageView
+                android:id="@+id/lc_textview_mecode_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lc_allclass_mecode" />
+
+            <TextView
+                android:id="@+id/lc_textview_mecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lc_textview_mecode_iamge"
+                android:text="@string/mecode"
+                android:textColor="@drawable/jxb_text_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_leftmenu_allclass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/jxb_userinfo_bg_select">
+
+            <ImageView
+                android:id="@+id/lc_textview_allclass_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lc_studyrecored_select" />
+
+            <TextView
+                android:id="@+id/lc_textview_allclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lc_textview_allclass_iamge"
+                android:text="@string/allclass"
+                android:textColor="@drawable/jxb_text_normal" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lc_leftmenu_mylcbean"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/jxb_userinfo_bg_select">
+
+            <ImageView
+                android:id="@+id/lc_leftmenu_mylcbean_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lc_mebean_select" />
+
+            <TextView
+                android:id="@+id/lc_leftmenu_mylcbeantest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lc_leftmenu_mylcbean_iamge"
+                android:text="@string/mbean"
+                android:textColor="@drawable/jxb_text_normal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lc_leftmenu_aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/jxb_userinfo_bg_select">
+
+            <ImageView
+                android:id="@+id/lc_leftmenu_notificationCenter_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lc_aboutme_select" />
+
+            <TextView
+                android:id="@+id/lc_leftmenu_notificationCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lc_leftmenu_notificationCenter_iamge"
+                android:text="@string/aboutme"
+                android:textColor="@drawable/jxb_text_normal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lc_leftmenu_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/jxb_userinfo_bg_select">
+
+            <ImageView
+                android:id="@+id/lc_leftmenu_studyRecord_iamge"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lc_option_select" />
+
+            <TextView
+                android:id="@+id/lc_leftmenu_feedbacktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lc_leftmenu_studyRecord_iamge"
+                android:text="@string/feedback"
+                android:textColor="@drawable/jxb_text_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_leftmenu_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/set_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:id="@+id/set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_image"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:text="设置"
+            android:textColor="@drawable/jxb_text_normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

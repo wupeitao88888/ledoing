@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFF0F5">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/comment_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/comment_AbPullToRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/comment_title"
+        android:background="#FFEFF0F5">
+
+        <ListView
+            android:id="@+id/comment_ListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#fff"></ListView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    tools:context="cn.ledoing.activity.LCMeLcBean">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_mebean_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+
+    <RelativeLayout
+        android:id="@+id/lc_mebean_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_mebean_title">
+        <RelativeLayout
+            android:id="@+id/lc_mebean_bg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mebean_bg">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lc_mebean_top"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/theme_bg">
+
+            <ImageView
+                android:id="@+id/lc_mebean_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/balance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:id="@+id/lc_mebean_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lc_mebean_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/mebalance"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/lc_mebean_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lc_mebean_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_mebean_gift"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/lc_mebean_top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lc_mebean">
+
+            <ImageView
+                android:id="@+id/lc_mebean_giftimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/mebean_gift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/lc_mebean_giftimage"
+                android:text="@string/balancegift"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/lc_mebean_arrow1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/b_more" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_mebean_task"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/lc_mebean_gift"
+            android:background="@drawable/lc_mebean">
+
+            <ImageView
+                android:id="@+id/lc_mebean_taskimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/mebean_task" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/lc_mebean_taskimage"
+                android:text="@string/balancetask"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/lc_mebean_arrow2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/b_more" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_mebean_conversion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/lc_mebean_task"
+            android:background="@drawable/lc_mebean">
+
+            <ImageView
+                android:id="@+id/lc_mebean_conversionimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/mebean_conversion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/lc_mebean_conversionimage"
+                android:text="@string/balanceconversion"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/lc_mebean_arrow3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/b_more" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_mebean_detail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/lc_mebean_conversion"
+            android:background="@drawable/lc_mebean">
+
+            <ImageView
+                android:id="@+id/lc_mebean_detailimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/mebean_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/lc_mebean_detailimage"
+                android:text="@string/balancedetail"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/lc_mebean_arrow4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/b_more" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_mebean_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lc_mebean_title"
+        android:visibility="gone"></cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

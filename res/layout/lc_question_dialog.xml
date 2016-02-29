@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDEDED"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#EDEDED"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.33"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/lc_dialog_questionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lc_dialog_back"
+                    android:layout_marginTop="10dp"
+                    android:text="超级飞车的车轮是如何组装的？"
+                    android:textColor="#070707"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/lc_dialog_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/dialog_background"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lc_question_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lc_dialog_questionText"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/lc_re_a"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/lc_question_bg_select" >
+
+                        <ImageView
+                            android:id="@+id/lc_dialog_Aimage"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/aboutuswhite" />
+
+                        <TextView
+                            android:id="@+id/lc_dialog_Atext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lc_dialog_Aimage"
+                            android:layout_centerHorizontal="true"
+                            android:text="A、不知道怎么组装。"
+                            android:textColor="@drawable/lc_question_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lc_re_b"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/lc_question_bg_select" >
+
+                        <ImageView
+                            android:id="@+id/lc_dialog_Bimage"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/aboutuswhite" />
+
+                        <TextView
+                            android:id="@+id/lc_dialog_Btext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lc_dialog_Bimage"
+                            android:layout_centerHorizontal="true"
+                            android:text="B、不知道。"
+                            android:textColor="@drawable/lc_question_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lc_question_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lc_question_top"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/lc_re_c"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/lc_question_bg_select" >
+
+                        <ImageView
+                            android:id="@+id/lc_dialog_Cimage"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/aboutuswhite" />
+
+                        <TextView
+                            android:id="@+id/lc_dialog_Ctext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lc_dialog_Cimage"
+                            android:layout_centerHorizontal="true"
+                            android:text="A、不知道怎么组装。"
+                            android:textColor="@drawable/lc_question_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lc_re_d"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/lc_question_bg_select" >
+
+                        <ImageView
+                            android:id="@+id/lc_dialog_Dimage"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/aboutuswhite" />
+
+                        <TextView
+                            android:id="@+id/lc_dialog_Dtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lc_dialog_Dimage"
+                            android:layout_centerHorizontal="true"
+                            android:text="B、不知道。"
+                            android:textColor="@drawable/lc_question_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/title"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/dialog_button_cancel"
+                        android:layout_width="120dip"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue_btn_selector"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/dialog_button_affim"
+                        android:layout_width="120dip"
+                        android:layout_height="40dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/blue_btn_selector"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

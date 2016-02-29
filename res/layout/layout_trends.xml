@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFF0F5"
+    >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/trends_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/trends_AbPullToRefreshView"
+        android:layout_width="fill_parent"
+        android:background="#FFEFF0F5"
+        android:layout_below="@+id/trends_title"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/trends_ListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#fff" >
+        </ListView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+    <ImageView
+        android:id="@+id/no_deta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trends_title"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@drawable/teacher_comment_normal"/>
+
+
+</RelativeLayout>

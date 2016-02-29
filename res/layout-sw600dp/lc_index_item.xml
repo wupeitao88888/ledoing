@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7.5dp"
+    android:layout_marginBottom="7.5dp"
+    android:background="@color/grayness">
+
+    <View
+        android:id="@+id/lc_content_button"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+     />
+
+    <RelativeLayout
+        android:id="@+id/lc_index_content"
+        android:layout_width="310dp"
+        android:layout_height="466dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lc_content_button"
+        android:background="@color/yellow">
+
+
+        <TextView
+            android:id="@+id/lc_index_groupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一集 星际之谜"
+            android:textColor="@color/somber"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/lc_index_titleimage"
+            android:layout_width="300dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/lc_index_groupimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                 />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/lc_index_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本集学习任务"
+            android:textColor="@color/somber"
+            android:layout_below="@+id/lc_index_titleimage"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/lc_index_videoall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lc_index_task"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lc_index_threeall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/index_item_bg_selector">
+
+
+                <ImageView
+                    android:id="@+id/lc_index_threeimage"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/lc_index_threename"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/lc_index_threeimage"
+                    android:layout_alignBottom="@+id/lc_index_threeimage"
+                    android:textSize="17.5sp"
+
+                    android:layout_marginLeft="7.5dp"
+                    android:textColor="@color/somber" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_threeicon"
+                    android:layout_width="16.5dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/threey"
+                    android:layout_alignTop="@+id/lc_index_threeimage"
+                    android:layout_alignLeft="@+id/lc_index_threename"
+                     />
+
+
+                <TextView
+                    android:id="@+id/lc_index_threeiconname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/lightblack"
+                    android:layout_toRightOf="@+id/lc_index_threeicon"
+                    android:layout_alignBottom="@+id/lc_index_threeicon"
+                    android:layout_marginLeft="3.5dp" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_threeinto"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:background="@drawable/into"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_index_fourall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/lc_index_threeall"
+                android:background="@drawable/index_item_bg_selector">
+
+
+                <ImageView
+                    android:id="@+id/lc_index_fourimage"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                     />
+
+                <TextView
+                    android:id="@+id/lc_index_fourname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/lc_index_fourimage"
+                    android:layout_alignBottom="@+id/lc_index_fourimage"
+                    android:textSize="17.5sp"
+                    android:layout_marginLeft="7.5dp"
+                    android:textColor="@color/somber" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_fouricon"
+                    android:layout_width="16.5dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/foury"
+                    android:layout_alignLeft="@+id/lc_index_fourname"
+                    android:layout_alignTop="@+id/lc_index_fourimage" />
+
+
+                <TextView
+                    android:id="@+id/lc_index_fouriconname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/lightblack"
+                    android:layout_toRightOf="@+id/lc_index_fouricon"
+                    android:layout_alignBottom="@+id/lc_index_fouricon"
+                    android:layout_marginLeft="3.5dp" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_fourinto"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/into"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_index_fiveall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/lc_index_fourall"
+                android:background="@drawable/index_item_bg_selector">
+
+
+                <ImageView
+                    android:id="@+id/lc_index_fiveimage"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                   />
+
+                <TextView
+                    android:id="@+id/lc_index_fivename"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/lc_index_fiveimage"
+                   android:layout_alignBottom="@+id/lc_index_fiveimage"
+                    android:textSize="17.5sp"
+                    android:layout_marginLeft="7.5dp"
+                    android:textColor="@color/somber" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_fiveicon"
+                    android:layout_width="16.5dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/fivey"
+                    android:layout_alignLeft="@+id/lc_index_fivename"
+                    android:layout_alignTop="@+id/lc_index_fiveimage" />
+
+
+                <TextView
+                    android:id="@+id/lc_index_fiveiconname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/lightblack"
+                    android:layout_toRightOf="@+id/lc_index_fiveicon"
+                    android:layout_alignBottom="@+id/lc_index_fiveicon"
+                    android:layout_marginLeft="3.5dp" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_fiveinto"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/into"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_index_sixall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/lc_index_fiveall"
+                android:background="@drawable/index_item_bg_selector">
+
+
+                <ImageView
+                    android:id="@+id/lc_index_siximage"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                     />
+
+                <TextView
+                    android:id="@+id/lc_index_sixname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/lc_index_siximage"
+                    android:layout_alignBottom="@+id/lc_index_siximage"
+                    android:textSize="17.5sp"
+                    android:layout_marginLeft="7.5dp"
+                    android:textColor="@color/somber" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_sixicon"
+                    android:layout_width="16.5dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/sixy"
+                    android:layout_alignTop="@+id/lc_index_siximage"
+                    android:layout_alignLeft="@+id/lc_index_sixname"
+                   />
+
+
+                <TextView
+                    android:id="@+id/lc_index_sixiconname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/lightblack"
+                    android:layout_toRightOf="@+id/lc_index_sixicon"
+                    android:layout_alignBottom="@+id/lc_index_sixicon"
+                    android:layout_marginLeft="3.5dp" />
+
+
+                <ImageView
+                    android:id="@+id/lc_index_sixinto"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/into"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/lc_index_videoall"
+            android:layout_height="15dp">
+
+
+
+        </RelativeLayout>
+
+        <!-- 加锁浮层 -->
+        <RelativeLayout
+            android:id="@+id/lc_index_fuceng"
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:visibility="gone"
+            android:background="#90f7971e">
+
+            <ImageView
+                android:id="@+id/lc_index_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="150dp"
+             />
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="133dp"
+            android:layout_height="33.3dp"
+            android:text="预约线下课"
+            android:id="@+id/order_course"
+            android:layout_below="@+id/lc_index_videoall"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/order_selector"
+            android:textColor="#259b24"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/lc_index_content"
+        android:layout_height="10dp">
+    </RelativeLayout>
+</RelativeLayout>

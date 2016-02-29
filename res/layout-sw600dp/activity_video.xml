@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.ledoing.view.LCTitleBar
+            android:id="@+id/lc_video_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"></cn.ledoing.view.LCTitleBar>
+
+        <RelativeLayout
+            android:id="@+id/videoviewholder"
+            android:layout_width="wrap_content"
+            android:layout_height="205dp"
+            android:layout_below="@id/lc_video_title"
+            android:background="#000000">
+
+            <com.baidu.cyberplayer.core.BVideoView
+                android:id="@+id/video_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></com.baidu.cyberplayer.core.BVideoView>
+
+
+            <TextView
+                android:id="@+id/lc_startplay_buffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lc_ctrl_all"
+                android:text="............"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/lc_startplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/stopplay" />
+
+            <RelativeLayout
+                android:id="@+id/lc_ctrl_all"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:background="#501F1F1F">
+
+                <ImageView
+                    android:id="@+id/lc_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/pause" />
+
+                <TextView
+                    android:id="@+id/lc_playtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/lc_pause"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <SeekBar
+                    android:id="@+id/media_progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/lc_allplaytime"
+                    android:layout_toRightOf="@+id/lc_playtime"
+                    android:focusable="true"
+                    android:maxHeight="2.0dip"
+                    android:minHeight="2.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:progressDrawable="@drawable/po_seekbar"
+                    android:thumb="@drawable/detail_icon_schedule_ball" />
+
+                <TextView
+                    android:id="@+id/lc_allplaytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/lc_zoom"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/lc_zoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zoom" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_viedo_info"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/videoviewholder"
+            android:background="@color/Zift">
+
+            <TextView
+                android:id="@+id/lc_videoinfo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="35dp"
+                android:layout_toLeftOf="@+id/lc_videoinfo_arrow"
+                android:text="这是"
+                android:textColor="@color/gray"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/lc_videoinfo_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/lc_videoinfo_synopsis"
+                android:src="@drawable/arrowdown" />
+
+            <TextView
+                android:id="@+id/lc_videoinfo_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:text="简介"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:layout_centerVertical="true"
+                android:textSize="15sp" />
+
+
+            <View
+                android:id="@+id/lc_videoinfo_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DADADA" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/lc_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lc_viedo_info"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/lc_srttext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lyc_text"
+                android:textSize="14sp"
+                ></TextView>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/lc_video_listvideoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lc_viedo_info">
+
+            <RelativeLayout
+                android:id="@+id/lc_video_anmitiontitle"
+                android:layout_width="match_parent"
+                android:background="#EAEAEA"
+                android:layout_height="27.4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剧情动画"
+                    android:layout_centerVertical="true"
+                    android:textColor="#858585"
+                    android:id="@+id/lc_video_task"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/lc_studied_ListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/lc_video_anmitiontitle"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000" />
+
+
+            <RelativeLayout
+                android:id="@+id/lc_video_lceBeanall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lc_video_anmitiontitle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   android:layout_marginTop="78dp"
+                    android:background="@color/hoary">
+
+
+                    <RelativeLayout
+                        android:id="@+id/lc_video_lcebeanprice"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/lc_video_taskicon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/balance"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lc_video_tasklcbean"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/lc_video_taskicon"
+                            android:layout_centerVertical="true"
+                            android:textSize="15dp"
+                            android:text="100"
+                            android:textColor="@color/orange" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lc_video_tasklcbeanOld"
+                            android:text="100"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/lc_video_tasklcbean"
+                            android:layout_centerVertical="true"
+                            android:textSize="11dp"
+
+                            android:textColor="#FF545F68" />
+
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/lc_video_lceBeanbt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   兑换课程   "
+                        android:layout_below="@+id/lc_video_lcebeanprice"
+                        android:textSize="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/buylebean" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_pull_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lc_viedo_info"
+            android:background="#DADADA"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="7dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/colorcircle">
+
+                    <cn.ledoing.view.SlideView
+                        android:id="@+id/pullsliderd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_color"
+                        slider:effectiveLength="90dp"
+                        slider:effectiveVelocity="190dp"
+                        slider:maskText="@string/slider_text"
+                        slider:maskTextMarginLeft="0dp"
+                        slider:maskTextMarginTop="0dp"
+                        slider:maskTextSize="28sp"
+                        slider:slidableLength="100dp"
+                        slider:slider="@drawable/bluecircle"
+                        slider:sliderMarginLeft="0dp"
+                        slider:sliderMarginTop="0dp" />
+
+                    <ImageView
+                        android:id="@+id/lc_anim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="130dp"
+                        android:src="@drawable/anim_1"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

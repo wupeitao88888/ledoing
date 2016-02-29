@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lc_class_loginall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/lc_class_playimage"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/lc_class_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lc_class_playimage"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/lc_class_menu_all"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/lc_class_menuLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#0000"
+                    android:text="已学习"
+                    android:textColor="@color/line_text_normal_select"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/left_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_normal_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_class_menuRight_all"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/lc_class_menuRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:text="未学习"
+                    android:textColor="@color/line_text_normal"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/right_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <cn.ledoing.view.LCSlideShowView
+            android:id="@+id/lc_class_menu_slideshowView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lc_class_menu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_classall_unregisterall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_class_loginall" >
+
+        <FrameLayout
+            android:id="@+id/lc_classall_unregister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

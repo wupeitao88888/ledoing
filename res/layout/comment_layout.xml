@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/rating_rl"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="16.6dp"
+        android:layout_marginRight="16.6dp">
+
+        <TextView
+            android:id="@+id/center_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中心服务"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textColor="#40435B"
+            />
+
+        <cn.ledoing.view.LCRatingBarFace
+            android:id="@+id/rating_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/center_service"
+            android:layout_marginLeft="16.6dp"
+            />
+
+        <TextView
+            android:id="@+id/status_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未评"
+            android:layout_centerVertical="true"
+            android:textColor="#AFB0B7"
+            android:layout_alignParentRight="true"
+            android:textSize="13.3dp"/>
+        
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#CDCDCD" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/exit_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16.6dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:layout_height="311dp"
+        android:textSize="13.3dp"
+        android:minEms="10"
+        android:maxEms="300"
+        android:background="#F4F4F4"
+        android:hint="长度在10-300个字之间\n评价一下主讲老师，教学特点、小朋友是不是很喜欢？"
+        android:textColorHint="#BABABA"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/lc_dialog_other"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23.3dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/green_selector"
+        android:text="提交评价"
+        android:textColor="@color/white_to_black_text_selector"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

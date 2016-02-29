@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_phonenumber_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_phonenumber_all"
+        android:layout_width="fill_parent"
+        android:layout_height="57dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#98dfec" />
+
+        <TextView
+            android:id="@+id/lc_phonenumber_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:hint="您的手机号码："
+            android:textColorHint="#050505"
+            android:textSize="14dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/lc_phonenumber_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/lc_phonenumber_to"
+            android:hint=""
+            android:textColorHint="@color/selet_title"
+            android:textSize="14dp" >
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lc_phonenumber_update"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/lc_phonenumber_all"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/logon_yanzheng"
+        android:text="@string/lc_updateuserphone"
+        android:textColor="@color/selet_title"
+        android:textSize="13sp" />
+
+</RelativeLayout>

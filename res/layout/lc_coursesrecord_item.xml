@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="3dp">
+
+    <RelativeLayout
+        android:id="@+id/lc_courses_all"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/lc_courses_date"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/lc_courses_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33dp"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:id="@+id/lc_courses_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/lc_courses_day"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/lc_courses_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/lc_courses_week"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#EBEBEB" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_deputy_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lc_courses_date">
+
+            <TextView
+                android:id="@+id/lc_courses_timed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lc_courses_timed"
+                android:text="小时"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lc_courses_tname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+                <Button
+                    android:id="@+id/lc_courses_prise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="38dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/logon_yanzheng"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="确认" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

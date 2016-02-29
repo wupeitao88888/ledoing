@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1D1D1"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_week"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/text_right"
+                android:drawablePadding="3.3dp"
+                android:gravity="center"
+                android:text="按星期"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/week_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/week"
+                android:text="全部"
+                android:textColor="#A1A1A1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#CECECE" />
+
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/text_right"
+                android:drawablePadding="3.3dp"
+                android:text="按时间"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/time_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textColor="#A1A1A1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#CECECE" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/text_right"
+                android:drawablePadding="3.3dp"
+                android:text="按老师"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/teacher_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/week"
+                android:text="全部"
+                android:textColor="#A1A1A1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_height="30dp">
+
+        <Button
+            android:id="@+id/theme_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_button_selector"
+            android:text="按主题排序"
+            android:gravity="center"
+            android:textColor="#45454E"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/time_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_button_right_selector"
+            android:text="按时间排序"
+            android:gravity="center"
+            android:textColor="#45454E"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp"
+            android:layout_toRightOf="@+id/theme_btn"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent">
+        android:cacheColorHint="#fff" >
+    </ListView>
+</LinearLayout>

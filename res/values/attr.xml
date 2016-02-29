@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    <declare-styleable name="SlideView">
+        <attr name="maskText" format="string" />
+        <attr name="maskTextSize" format="dimension" />
+        <attr name="maskTextMarginLeft" format="dimension" />
+        <attr name="maskTextMarginTop" format="dimension" />
+        <attr name="slider" format="reference" />
+        <attr name="sliderMarginLeft" format="dimension" />
+        <attr name="sliderMarginTop" format="dimension" />
+        <attr name="slidableLength" format="dimension" />
+        <attr name="effectiveLength" format="dimension" />
+        <attr name="effectiveVelocity" format="dimension" />
+        <attr name="sliderEnd" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="GifMoviewView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifMoviewViewStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

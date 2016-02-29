@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/titlebar_activity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/lc_left_back_all"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/lc_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/goback" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1111111111"
+            android:textColor="@color/white"
+            android:textSize="16.7sp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:text="111111"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/nonet_all"
+            android:layout_width="fill_parent"
+            android:layout_height="226dp"
+            android:layout_below="@id/lc_nonetwork_title"
+            android:background="#E5E5E5" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/x_nonet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:text="网络未连接"
+                android:textColor="#8e8d8d"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/retry"
+            android:layout_width="141dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/nonet_all"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="103dp"
+            android:background="@drawable/logon_yanzheng"
+            android:text="重试"
+            android:textColor="@color/selet_title"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

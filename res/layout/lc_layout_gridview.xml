@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#818181">
+
+    <!--<com.ab.view.pullview.PullToRefreshView-->
+        <!--android:id="@+id/lc_find_pullto"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+
+        <!--<ScrollView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="#818181">-->
+
+            <!--<include-->
+                <!--android:id="@+id/lc_find_carousel"-->
+                <!--layout="@layout/lc_layout_carousel"-->
+                <!--android:onClick="mRefresh" />-->
+
+
+            <!--<cn.ledoing.view.CustomGridView-->
+                <!--android:id="@+id/lc_find_gridview"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:cacheColorHint="#00000000"-->
+                <!--android:layout_below="@+id/lc_find_carousel"-->
+                <!--android:divider="@drawable/list_divider"-->
+                <!--android:dividerHeight="0px"-->
+                <!--android:horizontalSpacing="0dp"-->
+                <!--android:numColumns="2" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--</ScrollView>-->
+    <!--</com.ab.view.pullview.PullToRefreshView>-->
+
+    <cn.ledoing.view.PullScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_fcontent_nonet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></cn.ledoing.view.LCNoNetWork>
+
+    <include
+        android:id="@+id/lc_find_refresh"
+        layout="@layout/lc_layout_refresh"
+        android:visibility="gone" />
+</RelativeLayout>

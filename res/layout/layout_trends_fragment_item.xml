@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/center_image_rl"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/teacher_image"
+            android:layout_width="33dp"
+            android:scaleType="centerCrop"
+            android:layout_height="33dp" />
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="马家堡活动中心"
+            android:textColor="#45454E"
+            android:layout_toRightOf="@+id/teacher_image"
+            android:layout_marginLeft="7dp"
+            android:layout_alignTop="@+id/teacher_image"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/center_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_text"
+            android:layout_alignLeft="@+id/center_text"
+            android:textColor="#989898"
+            android:textSize="11dp"
+            android:visibility="gone"
+            android:text="丰台区马家堡家园三里3号楼亲子楼2楼" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trends_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:ellipsize="end"
+        android:layout_below="@+id/center_image_rl"
+        android:includeFontPadding="false"
+        android:maxLines="3"
+        android:text="Java，是由Sun Microsystems公司于1995年5月推出的Java程序设计语言和Java平台的总称。用Java实现的HotJava浏览器（支持Java applet）显示了Java的魅力：跨平台、动态的Web、Internet计算。"
+        android:textColor="#FF696975"
+        android:textSize="13.3dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trends_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/trends_pic1"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/trends_pic2"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:layout_toRightOf="@+id/trends_pic1"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/trends_pic3"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:scaleType="centerCrop"
+            android:layout_toRightOf="@+id/trends_pic2"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/count"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/trends_pic3"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/pic_icon">
+
+
+            <TextView
+                android:id="@+id/picCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trends_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="15dp"
+        android:text="十分钟之前"
+        android:textColor="#FF989898"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:id="@+id/comment_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/content"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/trends_time"
+        >
+
+        <ImageView
+            android:id="@+id/comment_onCounticon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/comment_onCount"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/comment_onCount"
+            android:background="@drawable/comment" />
+        <TextView
+            android:id="@+id/comment_onCount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="评论"
+            android:textColor="#FFC0C0CE"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/praise_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_alignTop="@+id/trends_time"
+        android:layout_toLeftOf="@+id/comment_li">
+
+        <ImageView
+            android:id="@+id/ispraise"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/price_normal" />
+
+        <TextView
+            android:id="@+id/supportCount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="2dp"
+            android:text="赞"
+            android:textColor="#FFC0C0CE"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/praise_li"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+
+            android:background="#FFD5D5D5" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFEFF0F5" />
+    </LinearLayout>
+</RelativeLayout>

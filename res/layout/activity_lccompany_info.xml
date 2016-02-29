@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="cn.ledoing.activity.LCCompanyInfo" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_lccompany_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lc_lccompany_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:text="乐创宝贝（北京）教育科技有限公司，专注于3-12岁儿童科技动手创新能力的培养，致力于通过生动、有趣、丰富、多元化的教学手段，让小朋友们在玩的过程中，对科学、生活环境、世界可以有更深入理解。
+我们认为，教育不是学习，是成长。我们希望通过自己的努力，可以让小朋友们在青少年阶段，更好的释放天性，培养好奇心与探索精神，在快乐的体验中，学会与周围环境更和谐的相处。"
+        android:textColor="#b2b2b2"
+        android:textSize="15sp" />
+
+</RelativeLayout>

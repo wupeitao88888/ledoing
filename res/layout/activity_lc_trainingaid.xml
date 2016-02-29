@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_trainingaid_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_trainingaid_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_trainingaid_title" >
+
+        <RelativeLayout
+            android:id="@+id/lc_trainingaid_info"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:id="@+id/lc_trainingaid_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/lc_trainingaid_info"
+                android:textColor="#B1B1B1"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/lc_trainingaid_line"
+            android:layout_width="fill_parent"
+            android:layout_height="9dp"
+            android:layout_below="@id/lc_trainingaid_info"
+            android:background="#E5E5E5" />
+
+        <ListView
+            android:id="@+id/lc_trainingaid_mListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lc_trainingaid_line"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="0.5dp" />
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_trainingaid_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_trainingaid_title" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

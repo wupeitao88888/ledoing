@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- slidingmenu配置 -->
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+    <dimen name="mask_text_size">0dp</dimen>
+    <dimen name="mask_text_margin_left">0dp</dimen>
+    <dimen name="mask_text_margin_top">0dp</dimen>
+    <dimen name="slider_margin_left">0dp</dimen>
+    <dimen name="slider_margin_top">0dp</dimen>
+    <dimen name="slidable_length">0dp</dimen>
+    <dimen name="effective_length">0dp</dimen>
+    <dimen name="endbt">0dp</dimen>
+    <dimen name="effective_velocity">0dp</dimen>
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+</resources>

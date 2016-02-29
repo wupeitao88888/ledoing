@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F5">
+
+
+
+            <View
+                android:id="@+id/broadcast_line_top"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/broadcast_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/broadcast_line_top"
+                android:background="@color/white"
+                android:paddingBottom="11dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/broadcast_img"
+                    android:layout_width="19dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/broadcast_img" />
+
+                <TextView
+                    android:id="@+id/broadcast_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/broadcast_img"
+                    android:text="小广播"
+                    android:textColor="#FF40435B"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/broadcast_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/broadcast_text"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FF989898"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gridView_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/broadcast_rl"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingBottom="23dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/teacher_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教师风采"
+                    android:textColor="#45454E"
+                    android:textSize="16sp" />
+
+                <cn.ledoing.view.CustomGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/teacher_text"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="13.0dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="13.0dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_dynamic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gridView_rl"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/center_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中心动态"
+                    android:textColor="#40435B"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/center_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/center_text"
+                    android:text="26"
+                    android:textColor="#AFB0B7"
+                    android:textSize="31sp" />
+
+                <ImageView
+                    android:id="@+id/center_img"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="26dp"
+                    android:scaleType="centerCrop"
+                    android:layout_toRightOf="@+id/center_text"
+                    android:background="@drawable/no_pic" />
+
+                <ImageView
+                    android:id="@+id/center_img_two"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/center_img"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/no_pic"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/center_img_three"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/center_img_two"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/no_pic"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/center_img_four"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/center_img_three"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/no_pic"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16.6dp"
+                    android:background="@drawable/home_news_into" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_introduction_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_dynamic"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:paddingBottom="22dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/introduction_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中心介绍"
+                    android:textColor="#40435B"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/introduction_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/introduction_text"
+                    android:layout_marginTop="10dp"
+                    android:text="乐创教育， 是中国少年科学院，中国青少年发展服务中心，全国“青少年走进科学世界”科普活动指导委员会办公室指定的青少年机器人教育基地、少年科学家体验基地、青少年科教基地。专注于3-12岁儿童科技动手创新能力的培养，以创新的“三位一体建构主义”教育理念，金字塔学习理论为基础的“应用学习”教育模式，及世界著名品牌乐高，智高等多元教学器材等“五大优势”，在 “四大系列”课程充满趣味的真实情景与动手主题中，实现儿童想象力、动手能力、问题解决力、团队协作力、积极学习力培养的“五大教育目标” 。"
+                    android:textColor="#FF989898"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/business_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/introduction_content"
+                    android:layout_marginTop="7dp"
+                    android:text="营业时间"
+                    android:textColor="#45454E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/class_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/business_hours"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/business_hours"
+                    android:textColor="#989898"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/class_time_buttom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/class_time"
+                    android:layout_below="@+id/business_hours"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#989898"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/traffic_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/class_time_buttom"
+                    android:layout_marginTop="13dp"
+                    android:text="交通信息"
+                    android:textColor="#45454E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/traffic_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/traffic_information"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/traffic_information"
+                    android:textColor="#989898"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/traffic_content"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="联系方式"
+                    android:textColor="#45454E"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/phone_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/phone_text"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/phone_text"
+                    android:textColor="#989898"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+</RelativeLayout>

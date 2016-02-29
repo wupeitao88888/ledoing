@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_ledoing" default="compile.module.ledoing">
+  <dirname property="module.ledoing.basedir" file="${ant.file.module_ledoing}"/>
+  
+  <property name="module.jdk.home.ledoing" value="${jdk.home.android_api_21_platform}"/>
+  <property name="module.jdk.bin.ledoing" value="${jdk.bin.android_api_21_platform}"/>
+  <property name="module.jdk.classpath.ledoing" value="jdk.classpath.android_api_21_platform"/>
+  
+  <property name="compiler.args.ledoing" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="ledoing.output.dir" value="${module.ledoing.basedir}/build/classes/production/ledoing"/>
+  <property name="ledoing.testoutput.dir" value="${module.ledoing.basedir}/build/classes/test/ledoing"/>
+  
+  <path id="ledoing.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="ledoing.module.production.classpath">
+    <path refid="${module.jdk.classpath.ledoing}"/>
+  </path>
+  
+  <path id="ledoing.runtime.production.module.classpath">
+    <pathelement location="${ledoing.output.dir}"/>
+  </path>
+  
+  <path id="ledoing.module.classpath">
+    <path refid="${module.jdk.classpath.ledoing}"/>
+    <pathelement location="${ledoing.output.dir}"/>
+  </path>
+  
+  <path id="ledoing.runtime.module.classpath">
+    <pathelement location="${ledoing.testoutput.dir}"/>
+    <pathelement location="${ledoing.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.ledoing">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.ledoing">
+    <patternset refid="excluded.from.module.ledoing"/>
+  </patternset>
+  
+  <path id="ledoing.module.sourcepath">
+    <dirset dir="${module.ledoing.basedir}">
+      <include name="build/generated/source/r/debug"/>
+      <include name="build/generated/source/aidl/debug"/>
+      <include name="build/generated/source/buildConfig/debug"/>
+      <include name="build/generated/source/rs/debug"/>
+      <include name="build/generated/res/rs/debug"/>
+      <include name="res"/>
+      <include name="src"/>
+      <include name="assets"/>
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.ledoing" depends="compile.module.ledoing.production,compile.module.ledoing.tests" description="Compile module ledoing"/>
+  
+  <target name="compile.module.ledoing.production" depends="register.custom.compilers" description="Compile module ledoing; production classes">
+    <mkdir dir="${ledoing.output.dir}"/>
+    <javac2 destdir="${ledoing.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.ledoing}/javac">
+      <compilerarg line="${compiler.args.ledoing}"/>
+      <bootclasspath refid="ledoing.module.bootclasspath"/>
+      <classpath refid="ledoing.module.production.classpath"/>
+      <src refid="ledoing.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.ledoing"/>
+    </javac2>
+    
+    <copy todir="${ledoing.output.dir}">
+      <fileset dir="${module.ledoing.basedir}/build/generated/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/build/generated/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/build/generated/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/build/generated/source/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/build/generated/res/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/assets">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ledoing.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.ledoing.tests" depends="register.custom.compilers,compile.module.ledoing.production" description="compile module ledoing; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.ledoing" description="cleanup module">
+    <delete dir="${ledoing.output.dir}"/>
+    <delete dir="${ledoing.testoutput.dir}"/>
+  </target>
+</project>

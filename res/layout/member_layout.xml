@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_coures_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lc_coures_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/novip"
+                    android:layout_width="96dp"
+                    android:layout_height="86dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="43dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/no_vip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/novip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#FF989898"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/no_vip_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:text="无法完成线上预约"
+                    android:textColor="@color/black"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFCDCDCD" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="525dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFCDCDCD" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFCDCDCD" />
+
+                <ImageView
+                    android:id="@+id/explain"
+                    android:layout_width="326dp"
+                    android:layout_height="491dp"
+                    android:layout_centerInParent="true"
+                     />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFCDCDCD" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFCDCDCD" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="28dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="17dp"
+                    android:paddingTop="20dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/center_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF45454E"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/center_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="营业时间"
+                            android:textColor="#FF45454E"
+                            android:textSize="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/center_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/center_time_title"
+                            android:textColor="#FF989898"
+                            android:text=""
+                            android:layout_marginLeft="7dp"
+                            android:textSize="13dp"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/traffic_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="交通信息"
+                            android:textColor="#FF45454E"
+                            android:textSize="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/center_traffic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/traffic_title"
+                            android:textColor="#FF989898"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="13dp"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/contact_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系方式"
+                            android:textColor="#FF45454E"
+                            android:textSize="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/center_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/contact_title"
+                            android:textColor="#FF989898"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="13dp"
+                            />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/in_center"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="进入中心"
+                    android:textColor="#FF4A90E2"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#FFCDCDCD" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFCDCDCD" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

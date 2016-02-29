@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="82dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/Lc_mecourse_residueMoney"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/Lc_mecourse_leftmoney"
+            android:layout_width="53.0dp"
+            android:layout_height="53.0dp"
+            android:background="@drawable/surplus_money"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/Lc_mecourse_leftResidueMoney"
+            style="@style/course_textview_money"
+            android:layout_alignTop="@id/Lc_mecourse_leftmoney"
+            android:layout_toRightOf="@id/Lc_mecourse_leftmoney"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/Lc_mecourse_leftmoneyTitle"
+            style="@style/course_textview_title"
+            android:layout_alignBottom="@id/Lc_mecourse_leftmoney"
+            android:layout_toRightOf="@+id/Lc_mecourse_leftmoney"
+            android:layout_marginRight="15dp"
+            android:text="剩余金额" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Lc_mecourse_giveMoney"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/Lc_mecourse_givemoney"
+            android:layout_width="53.0dp"
+            android:layout_height="53.0dp"
+            android:background="@drawable/give_money"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/Lc_mecourse_rightGiveMoney"
+            style="@style/course_textview_money"
+            android:layout_alignTop="@id/Lc_mecourse_givemoney"
+            android:layout_toRightOf="@id/Lc_mecourse_givemoney"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/Lc_mecourse_leftMoneyTitle"
+            style="@style/course_textview_title"
+            android:layout_alignBottom="@id/Lc_mecourse_givemoney"
+            android:layout_toRightOf="@+id/Lc_mecourse_givemoney"
+            android:layout_marginRight="15dp"
+            android:text="赠送金额" />
+
+
+    </RelativeLayout>
+</LinearLayout>
+

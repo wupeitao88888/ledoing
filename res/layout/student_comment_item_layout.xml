@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ass_teacher_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:layout_below="@+id/line1"
+    android:layout_marginBottom="14dp"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/ass_teacher_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#40435B"
+        android:text="助教老师"/>
+
+    <TextView
+        android:id="@+id/ass_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="林静"
+        android:textColor="#40435B"
+        android:layout_below="@+id/ass_teacher_server"
+        android:layout_alignRight="@+id/ass_teacher_server"
+        android:textSize="13.3sp"/>
+
+    <cn.ledoing.view.LCRatingBarFace
+        android:id="@+id/ass_teacher_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.6dp"
+        android:layout_toRightOf="@+id/ass_teacher_server"/>
+
+    <TextView
+        android:id="@+id/ass_teacher_fan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="13.3sp"
+        android:layout_centerVertical="true"
+        android:textColor="#AFB0B7"
+        android:text="未知"
+        />
+</RelativeLayout>

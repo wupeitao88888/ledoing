@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_updatesex_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_updatesex_content"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/lc_updatesex_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+        <CheckBox
+            android:id="@+id/lc_men_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:button="@drawable/checkbox_style"
+            android:checked="false"
+            android:text="   " />
+
+        <TextView
+            android:id="@+id/lc_men_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lc_men_checkBox"
+            android:text="男"
+            android:textColor="#4C4C4C"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/lc_woman_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lc_men_content"
+            android:layout_marginLeft="25dp"
+            android:button="@drawable/checkbox_style"
+            android:text="   "
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/lc_woman_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lc_woman_checkBox"
+            android:text="女"
+            android:textColor="#4C4C4C"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/lc_update_submit"
+            android:layout_width="66dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/logon_yanzheng"
+            android:text="确定"
+            android:textColor="@color/selet_title"
+            android:textSize="13sp" >
+        </Button>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/selet_title" />
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_updatesex_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_updatesex_title" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

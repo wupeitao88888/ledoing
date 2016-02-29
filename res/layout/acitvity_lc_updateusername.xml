@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_updateusername_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_uodateusername_content"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/lc_updateusername_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+        <EditText
+            android:id="@+id/lc_update_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="33dp"
+            android:layout_toLeftOf="@+id/lc_update_submit"
+            android:background="@color/white"
+            android:hint="请输入宝贝姓名"
+            android:textColor="@color/userinfo_text"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/lc_update_submit"
+            android:layout_width="66dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/logon_yanzheng"
+            android:text="保存"
+            android:textColor="@color/selet_title"
+            android:textSize="13sp" >
+        </Button>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/selet_title" />
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_updateusername_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_updateusername_title" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

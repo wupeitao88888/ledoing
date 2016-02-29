@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title">#22C0AC</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0079FF</color>
+    <color name="jxb_userinfo_selected">#0BB4D3</color>
+    <drawable name="jxb_userinfo_normal">#0000</drawable>
+    <drawable name="white_title">#FFFFFF</drawable>
+    <drawable name="shallow">#40FFFFFF</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="violet">#4D5554</drawable>
+    <drawable name="tiled">#4ED4F4</drawable>
+    <color name="black">#000000</color>
+    <drawable name="dialog_question">#EDEDED</drawable>
+    <drawable name="title_tab">#0BB4D3</drawable>
+    <drawable name="tab_find">#555555</drawable>
+    <color name="selet_title">#3F51B5</color>
+    <color name="unselect">#979696</color>
+    <color name="userinfo_bg">#e5e5e5</color>
+    <color name="userinfo_text">#050505</color>
+    <color name="userinfo_textinfo">#838383</color>
+    <color name="menu_btn_class_select">#FFFFFF</color>
+    <color name="menu_btn_find_select">#00d2ff</color>
+    <color name="menu_btn_me_select">#8bd523</color>
+    <color name="menu_btn">#60FFFFFF</color>
+    <color name="tab_normal">#7bebff</color>
+    <color name="line_normal">#CCCCCC</color>
+    <color name="line_normal_select">#07ADCC</color>
+    <color name="line_text_normal">#919191</color>
+    <color name="line_text_normal_select">#05b9ca</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="lyc_text">#404040</color>
+    <color name="isplay">#d2d2d2</color>
+    <drawable name="bg_color">#0000</drawable>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+    <color name="index_one">#fd3476</color>
+    <color name="index_two">#ffc90f</color>
+    <color name="index_three">#4bc7fa</color>
+    <color name="index_four">#18b178</color>
+    <color name="grayness">#EBEBEB</color>
+    <color name="red">#FE1E1F</color>
+    <color name="Cambridgeblue">#0BB4D3</color>
+    <color name="gray">#B5B5B5</color>
+    <color name="yellow">#FFCC06</color>
+    <color name="somber">#4a4a4a</color>
+    <color name="lightblack">#696969</color>
+    <color name="green">#FF46A940</color>
+    <color name="Zift">#1D1D1D</color>
+    <color name="transparent_white">#00FFFFFF</color>
+
+    <color name="orange">#F6A521</color>
+
+    <color name="index1">#f7971e</color>
+    <color name="index91">#90f7971e</color>
+    <color name="index2">#eca402</color>
+    <color name="index92">#90eca402</color>
+    <color name="index3">#f5df3c</color>
+    <color name="index93">#90f5df3c</color>
+    <color name="index4">#c3d140</color>
+    <color name="index94">#90c3d140</color>
+    <color name="index5">#64b044</color>
+    <color name="index95">#9064b044</color>
+    <color name="index6">#34b67a</color>
+    <color name="index96">#9034b67a</color>
+    <color name="index7">#4dbfd9</color>
+    <color name="index97">#904dbfd9</color>
+
+    <color name="hoary">#99EBEBEB</color>
+
+    <color name="subtract">#ff8400</color>
+    <color name="titlebar_userinfo">#3F51B5</color>
+    <color name="titlebar_activity">#46A940</color>
+    <color name="gridview_back">#f4f4f4</color>
+    <color name="header">#45454E</color>
+    <color name="header_selected">#4A90E2</color>
+
+    <drawable name="title_bar">#3F51B5</drawable>
+    <color name="title_theme_text1">#45454E</color>
+    <color name="title_theme_text2">#696975</color>
+    <color name="title_theme_text3">#ACACB4</color>
+    <color name="theme_bg">#EFF0F5</color>
+    <color name="somber_title_bg">#FF343434</color>
+    <color name="ad_bg">#50000000</color>
+    <color name="scrollbg">#00FFFFFF</color>
+    <drawable name="pg_bar">#003F51B5</drawable>
+    <color name="line">#FFCDCDCD</color>
+    <color name="bule">#3F51B5</color>
+    <color name="gray_e1">#FF919191</color>
+    <color name="gray_bg">#ACACB4</color>
+</resources>

@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="cn.ledoing.activity.LCMeCourse">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_mecourse_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/lc_mecourse_rel"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/lc_mecourse_title"
+        android:layout_height="wrap_content">
+
+        <ViewStub
+            android:id="@+id/lc_mecourse_dddd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/lc_layout_course" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/lc_mecourse_rel"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/Lc_mecourse_onlineCourse"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="36.5dp"
+            android:paddingRight="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/userinfor_item_bg_selector">
+
+            <ImageView
+                android:id="@+id/Lc_mecourse_leftOnline"
+                android:layout_width="26.5dp"
+                android:layout_height="26.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/online"
+                />
+
+            <TextView
+                style="@style/me_course_onAndoffLine"
+                android:layout_toRightOf="@+id/Lc_mecourse_leftOnline"
+                android:text="线上课程" />
+
+            <ImageView
+                android:id="@+id/Lc_mecourse_rightOnline"
+                android:layout_width="26.5dp"
+                android:layout_height="26.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/next"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Lc_mecourse_offCourse"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="36.5dp"
+            android:paddingRight="24dp"
+            android:background="@drawable/userinfor_item_bg_selector">
+
+            <ImageView
+                android:id="@+id/Lc_mecourse_leftOffline"
+                android:layout_width="26.5dp"
+                android:layout_height="26.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/offline"
+                />
+
+            <TextView
+                style="@style/me_course_onAndoffLine"
+                android:layout_toRightOf="@+id/Lc_mecourse_leftOffline"
+                android:text="预约课程" />
+
+            <ImageView
+                android:id="@+id/Lc_mecourse_rightOffline"
+                android:layout_width="26.5dp"
+                android:layout_height="26.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/next"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Lc_mecourse_record"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="36.5dp"
+            android:paddingRight="24dp"
+            android:background="@drawable/userinfor_item_bg_selector">
+
+            <ImageView
+                android:id="@+id/Lc_mecourse_leftRecord"
+                android:layout_width="26.5dp"
+                android:layout_height="26.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/upclasshistory"
+                />
+
+            <TextView
+                style="@style/me_course_onAndoffLine"
+                android:layout_toRightOf="@+id/Lc_mecourse_leftRecord"
+                android:text="销课记录" />
+
+            <ImageView
+                android:id="@+id/Lc_mecourse_rightRecord"
+                android:layout_width="26.5dp"
+                android:layout_height="26.5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/next"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/lc_mebean_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mebean_bg">
+    </RelativeLayout>
+</RelativeLayout>

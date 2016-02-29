@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/comment_rl"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16.6dp"
+        android:layout_marginRight="16.6dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/teacher_image"
+            android:layout_width="26.6dp"
+            android:layout_height="26.6dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/uploading_default" />
+
+        <TextView
+            android:id="@+id/title_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/teacher_image"
+            />
+
+        <cn.ledoing.view.LCRatingBarFace
+            android:id="@+id/score_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/title_comment"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56.2dp"
+        android:layout_below="@+id/comment_rl"
+        android:layout_marginTop="7dp"
+        android:textSize="13dp"
+        android:textColor="#989898"
+        />
+
+    <TextView
+        android:id="@+id/time_and_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_alignLeft="@+id/comment_content"
+        android:layout_below="@+id/comment_content"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_and_class"
+        android:layout_marginTop="16.6dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFD5D5D5" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFEFF0F5" />
+    </LinearLayout>
+</RelativeLayout>

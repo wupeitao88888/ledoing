@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    tools:context="cn.ledoing.activity.LCFeedback">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_feedback_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></cn.ledoing.view.LCTitleBar>
+
+
+    <RelativeLayout
+        android:id="@+id/lc_feedback_goodIdea"
+        android:layout_width="fill_parent"
+        android:layout_height="228dp"
+        android:layout_below="@id/lc_feedback_title"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/lc_feedback_idea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="@string/idea"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:maxLines="13"
+            android:editable="false"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/lc_feedback_residueIdea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="13dp"
+            android:textSize="10sp"
+            android:text="还可以输入200字" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lc_feedback_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/lc_feedback_goodIdea"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/lc_feedback_ideaphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/lc_userphone"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <EditText
+            android:id="@+id/lc_feedback_ideaAuthor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lc_feedback_ideaphone"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="@string/chooseToFillIn"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/lc_feedback_submint"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/lc_feedback_phone"
+        android:background="@drawable/blue_btn_selector"
+        android:text="@string/submit"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

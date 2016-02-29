@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+            <cn.ledoing.view.LCTitleBar
+                android:id="@+id/posts_titlebar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:id="@+id/post_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="16dp"
+                    android:background="@color/white"
+                    android:hint="请输入标题(至少4个字)"
+                    android:singleLine="true"
+                    android:textColor="#FF696975"
+                    android:textColorHint="#FFBABABA"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#FFC0C0CE" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/bottm_re">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/white"
+                        android:gravity="left|top"
+                        android:hint="请输入内容"
+                        android:inputType="textMultiLine"
+                        android:minLines="30"
+                        android:maxLength="140"
+                        android:singleLine="true"
+                        android:textColor="#FF696975"
+                        android:textColorHint="#FFBABABA"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16dp"
+                        android:id="@+id/post_content" />
+
+                    <TextView
+                        android:id="@+id/post_lenth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/140"
+                        android:textColor="#FFBABABA"
+                        android:textSize="16dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottm_re"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFE6E6E8">
+
+                    <ImageView
+                        android:id="@+id/media"
+                        android:layout_width="26dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="#FF3F51B5" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+</LinearLayout>

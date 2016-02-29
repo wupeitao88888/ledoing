@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_coures_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_coures_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_coures_title">
+
+        <RelativeLayout
+            android:id="@+id/lc_coures_contenttitle"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:background="#478C3F">
+
+            <LinearLayout
+                android:id="@+id/lc_coures_time"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginLeft="33dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/lc_courses_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="  2015  "
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/lc_courses_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7月"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="7.5dp"
+                android:layout_height="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lc_courses_month"
+                android:src="@drawable/triangle1" />
+        </RelativeLayout>
+    </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lc_coures_classtime"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="已上课时"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/lc_coures_classtimed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lc_coures_residuetime"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="剩余课时"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/lc_coures_residuetimed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="12+4"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/deputy_title"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_below="@+id/lc_coures_contenttitle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/title_c">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="19dp"
+                android:text="课时"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="老师"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="19dp"
+                android:text="状态"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                 />
+
+        </RelativeLayout>
+
+        <com.ab.view.pullview.AbPullToRefreshView
+            android:id="@+id/lc_courses_pullto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/toast"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/deputy_title">
+
+            <ListView
+                android:id="@+id/lc_courses_ListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000" />
+
+        </com.ab.view.pullview.AbPullToRefreshView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lc_coures_contenttitle">
+
+            <include
+                android:id="@+id/lc_coures_refresh"
+                layout="@layout/lc_layout_refresh"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lc_coures_selector"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- 显示当前日期 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/lc_coures_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="取消"
+                    android:textColor="#0bb4D3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lc_coures_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:text="确认"
+                    android:textColor="#0bb4D3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#D2D2D5" />
+
+            <LinearLayout
+                android:id="@+id/select_lc_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <com.lc.widget.WheelView
+                    android:id="@+id/id_province"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></com.lc.widget.WheelView>
+
+                <com.lc.widget.WheelView
+                    android:id="@+id/id_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></com.lc.widget.WheelView>
+
+                <com.lc.widget.WheelView
+                    android:id="@+id/id_district"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"></com.lc.widget.WheelView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/toast"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF79A">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:text="系统24小时后会自动确认，如有问题和老师联系"
+               android:textSize="15dp"
+               android:textColor="#E12A2B"
+              />
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_coures_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lc_coures_title"
+        android:visibility="gone"></cn.ledoing.view.LCNoNetWork>
+</RelativeLayout>

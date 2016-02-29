@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/lc_me_PullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <ScrollView
+            android:id="@+id/mScrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    android:id="@+id/lc_me_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Gallery
+                        android:id="@+id/gallery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="73dp"
+                        android:background="#737373"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:spacing="5dip"
+                        android:unselectedAlpha="0.6" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="231dp"
+                        android:background="#D8D8D8" >
+
+                        <ImageView
+                            android:id="@+id/image_switcher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                          />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/lc_me_top"
+                    android:layout_marginTop="50dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/share_onekey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/share_bg" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/share_bt" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/lc_me_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#edecec"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_me_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

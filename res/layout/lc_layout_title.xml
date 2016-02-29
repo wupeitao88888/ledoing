@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/title_bar"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/lc_left_back_all"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/lc_left_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/lc_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lc_left_back"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_center_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_right_all"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp" >
+
+        <TextView
+            android:id="@+id/lc_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/lc_right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/lc_more"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

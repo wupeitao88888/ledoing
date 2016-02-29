@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tiled"
+    tools:context="cn.ledoing.activity.LCWelcome" >
+    <ImageView
+        android:id="@+id/lc_gitdancepage_two"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+
+        />
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="290dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lc_gitdancepage_arm"
+        />
+        <!--android:background="@drawable/arm"-->
+
+</RelativeLayout>

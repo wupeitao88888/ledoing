@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ledoing.activity.LCBeanDetail"
+    android:background="@color/theme_bg">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_beandetail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></cn.ledoing.view.LCTitleBar>
+
+
+    <RelativeLayout
+        android:id="@+id/lc_beandetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lc_beandetail_title">
+
+
+        <LinearLayout
+            android:id="@+id/lc_title_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/lc_title_top_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/lc_beandetail_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/myld_all_selector">
+
+                <TextView
+                    android:id="@+id/lc_beandetail_textall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:textColor="@color/myld_all_text_selector" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_beandetail_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/myld_income_selector">
+
+                <TextView
+                    android:id="@+id/lc_beandetail_textin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/out"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:textColor="@color/myld_all_text_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_beandetail_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/myld_spend_selector"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lc_beandetail_textout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/in"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:textColor="@color/myld_all_text_selector" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <com.ab.view.pullview.AbPullToRefreshView
+            android:id="@+id/lc_beandetail_pullto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grayness"
+            android:layout_below="@+id/lc_title_top">
+
+            <ListView
+                android:id="@+id/lc_beandetail_ListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#fff"></ListView>
+        </com.ab.view.pullview.AbPullToRefreshView>
+
+        <include
+            android:id="@+id/lc_beandetail_refresh"
+            layout="@layout/lc_layout_refresh"
+            android:visibility="gone"
+            android:onClick="mRefresh" />
+
+        <RelativeLayout
+            android:id="@+id/lc_beandetail_nodate"
+            android:layout_below="@+id/lc_title_top"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:background="@color/grayness"
+            android:layout_height="fill_parent">
+
+
+            <ImageView
+                android:id="@+id/detail"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂时没有兑换记录哟，点击刷新！"
+                android:textSize="15dp"
+                android:layout_below="@+id/detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_beandetail_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lc_beandetail_title"
+        android:visibility="gone"></cn.ledoing.view.LCNoNetWork>
+
+
+</RelativeLayout>

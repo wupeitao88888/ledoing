@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+
+    <TextView
+        android:id="@+id/trends_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="3"
+        android:textColor="#FF696975"
+        android:textSize="12dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trends_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/trends_pic1"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/trends_pic2"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/trends_pic1"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/trends_pic3"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_toRightOf="@+id/trends_pic2"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/count"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/trends_pic3"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/pic_icon">
+
+
+            <TextView
+                android:id="@+id/picCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/trends_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trends_content"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="15dp"
+        android:textColor="#FF989898"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:id="@+id/comment_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/content"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/trends_time"
+        >
+
+        <ImageView
+            android:id="@+id/comment_onCounticon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/comment_onCount"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/comment_onCount"
+            android:background="@drawable/comment" />
+        <TextView
+            android:id="@+id/comment_onCount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="评论"
+            android:textColor="#FFC0C0CE"
+            android:textSize="10dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/praise_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_alignTop="@+id/trends_time"
+        android:layout_toLeftOf="@+id/comment_li">
+
+        <ImageView
+            android:id="@+id/ispraise"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/price_normal" />
+
+        <TextView
+            android:id="@+id/supportCount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="2dp"
+            android:text="赞"
+            android:textColor="#FFC0C0CE"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/praise_li"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+
+            android:background="#FFD5D5D5" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFEFF0F5" />
+    </LinearLayout>
+</RelativeLayout>

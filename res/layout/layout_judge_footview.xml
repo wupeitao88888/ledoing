@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFEFF0F5"
+    android:layout_height="wrap_content"
+    android:paddingBottom="21dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/re_footer"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看全部评价"
+            android:textColor="#FF4A90E2"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFCDCDCD" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFCDCDCD" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

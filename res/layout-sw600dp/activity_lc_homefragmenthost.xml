@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#4D5554"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_classindex"
+                style="@style/maintabt"
+                android:drawableLeft="@drawable/jxb_tab_itembgclass"
+                android:drawablePadding="4dp"
+                android:text="@string/jxb_tab_credit"
+                android:textColor="@drawable/lc_tab_class" />
+
+            <RadioButton
+                android:id="@+id/radio_home"
+                style="@style/maintabt"
+                android:drawableLeft="@drawable/jxb_tab_itembgfind"
+                android:drawablePadding="4dp"
+                android:text="@string/jxb_tab_home"
+                android:textColor="@drawable/lc_tab_find" />
+
+
+            <RadioButton
+                android:id="@+id/radio_find"
+                style="@style/maintabt"
+                android:drawableLeft="@drawable/jxb_tab_itembgfind"
+                android:drawablePadding="4dp"
+                android:text="@string/jxb_tab_contact"
+                android:textColor="@drawable/lc_tab_find" />
+
+            <RadioButton
+                android:id="@+id/radio_me"
+                style="@style/maintabt"
+                android:drawableLeft="@drawable/jxb_tab_itembgme"
+                android:drawablePadding="2dp"
+                android:text="@string/jxb_tab_me"
+                android:textColor="@drawable/lc_tab_me" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom"
+        android:layout_below="@+id/layout_top">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </android.support.v4.app.FragmentTabHost>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="7dp"
+    android:background="@color/grayness"
+    android:orientation="vertical">
+
+        <ViewStub
+            android:id="@+id/lc_mecourse_money"
+            android:layout_width="fill_parent"
+            android:layout_height="82dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="14dp"
+            android:layout="@layout/lc_layout_coursemoney" />
+
+        <ViewStub
+            android:id="@+id/lc_mecourse_course"
+            android:layout_width="fill_parent"
+            android:layout_height="82dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="14dp"
+            android:layout_below="@id/lc_mecourse_title"
+            android:layout="@layout/lc_layout_coursetime" />
+
+</LinearLayout>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DuplicateIds">
+        <ignore path="res/layout/activity_lc_aboutme.xml" />
+    </issue>
+    <issue id="IncludeLayoutParam">
+        <ignore path="res/layout/activity_lc_studyrecored.xml" />
+    </issue>
+    <issue id="ManifestTypo">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/cn/ledoing/activity/LCUserInfo.java" />
+        <ignore path="src/com/lc/activity/LCAllClass.java" />
+        <ignore path="src/com/lc/activity/LCUploading.java" />
+        <ignore path="src/com/lc/fragment/LCClassAllFragment.java" />
+        <ignore path="src/com/lc/fragment/LCClassFragment.java" />
+        <ignore path="src/com/lc/view/SlideView.java" />
+    </issue>
+    <issue id="PrivateResource">
+        <ignore path="res/drawable/po_seekbar.xml" />
+    </issue>
+    <issue id="ProtectedPermissions">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/lc/activity/LCUserLoginAndRegister.java" />
+    </issue>
+    <issue id="WrongViewCast">
+        <ignore path="src/cn/ledoing/adapter/LCTrainingAidAdapter.java" />
+        <ignore path="src/com/lc/adapter/LCTrainingAidAdapter.java" />
+    </issue>
+</lint>

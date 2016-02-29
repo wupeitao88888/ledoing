@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_mecode_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_mecode_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_mecode_title"
+        android:background="@drawable/bg_mecode">
+
+
+        <RelativeLayout
+            android:id="@+id/lc_mecode_content"
+            android:layout_width="262dp"
+            android:layout_height="304dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/black" />
+
+
+            <RelativeLayout
+                android:id="@+id/code_top"
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#ececec" />
+
+                <ImageView
+                    android:id="@+id/lc_mecode_hand"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hand" />
+
+                <TextView
+
+                    android:id="@+id/lc_mecode_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/lc_mecode_hand"
+                    android:text="赵信"
+                    android:textColor="#676767"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/lc_mecode_image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/code_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lc_mecode_image"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:text="@string/mecode_sellClass"
+                android:textColor="#a3a3a3"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lc_mecode_chose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#50000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lc_up"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_above="@+id/lc_mecode_quit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/lc_mecode_change"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lc_question_bg_select">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="换个样式"
+                        android:textColor="@drawable/jxb_text_normal"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/linse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#C4C4C4" />
+
+                <RelativeLayout
+                    android:id="@+id/lc_mecode_savephoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lc_question_bg_select">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="保存图片"
+                        android:textColor="@drawable/jxb_text_normal"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lc_mecode_quit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/lc_question_bg_select">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="取消"
+                    android:textColor="@drawable/jxb_text_normal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_mecode_nonetw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lc_mecode_title"
+        android:visibility="gone">
+    </cn.ledoing.view.LCNoNetWork>
+</RelativeLayout>

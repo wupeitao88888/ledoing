@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_comment_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lc_comment_title"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/top_rl"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="11dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.6dp"
+                android:paddingTop="13.3dp"
+                android:paddingBottom="13.3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#40435B"
+                    android:text="地点:"/>
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#40435B"
+                    android:text="时间:"/>
+
+                <TextView
+                    android:id="@+id/them_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#40435B"
+                    android:layout_marginTop="8dp"
+                    android:text="主题:"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.6dp"
+                android:layout_marginTop="8dp"
+                android:paddingRight="14dp"
+                android:layout_below="@+id/top_rl"
+                android:background="@color/white"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/center_server_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/center_server"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#40435B"
+                        android:text="中心服务"/>
+
+                    <cn.ledoing.view.LCRatingBarFace
+                        android:id="@+id/center_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.6dp"
+                        android:layout_toRightOf="@+id/center_server"/>
+
+                    <TextView
+                        android:id="@+id/fan_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="13.3sp"
+                        android:textColor="#AFB0B7"
+                        android:text="未知"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CDCDCD"
+                    android:layout_below="@+id/center_server_rl"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/teacher_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_below="@+id/line"
+                    android:layout_marginBottom="14dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/teacher_server"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#40435B"
+                        android:text="主讲老师"/>
+
+                    <TextView
+                        android:id="@+id/teacher_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张小幅"
+                        android:textColor="#40435B"
+                        android:layout_below="@+id/teacher_server"
+                        android:layout_alignRight="@+id/teacher_server"
+                        android:textSize="13.3sp"/>
+
+                    <cn.ledoing.view.LCRatingBarFace
+                        android:id="@+id/teacher_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.6dp"
+                        android:layout_toRightOf="@+id/teacher_server"/>
+
+                    <TextView
+                        android:id="@+id/teacher_fan_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textSize="13.3sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#AFB0B7"
+                        android:text="未知"
+                        />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="78dp"
+                    android:hint="长度在10-300个字之间 \n评价一下主讲老师，教学特点、小朋友是不是很喜欢？"
+                    android:textColorHint="#BABABA"
+                    android:textSize="13.3sp"
+                    android:gravity="top"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/teacher_rl"
+                    android:background="#F4F4F4"/>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CDCDCD"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/edit_text"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ass_teacher_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginBottom="14dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/center_rl"
+                android:background="#FFFAEE">
+
+                <ImageView
+                    android:id="@+id/image_tip"
+                    android:layout_width="13dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="16.6dp"
+                    android:background="@drawable/time_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.3sp"
+                    android:textColor="#D3A050"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/image_tip"
+                    android:text="请在上课后20天内评价"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5D6464" >
+
+        <TextView
+            android:id="@+id/ld_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16.6dp"/>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="提交评价"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/green"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

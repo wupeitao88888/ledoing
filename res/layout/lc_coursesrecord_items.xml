@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayness"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8.50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/line_top_bg"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingLeft="24.50dp"
+        android:paddingRight="24.50dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/booking_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="9dp"
+            android:textColor="@drawable/title_bar"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/booking_time_text"
+            android:background="#b0b0b0"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="24.50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/class_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/class_state_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="9dp"
+                android:id="@+id/center_rl"
+                android:layout_below="@id/class_address_text"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/teacher_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/class_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/class_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/teacher_name_text"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/lc_courses_prise"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/blue_btn_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="确认"/>
+
+                <Button
+                    android:id="@+id/lc_courses_cancel"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/blue_btn_hollow_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:visibility="gone"
+                    android:textColor="@drawable/title_bar"
+                    android:textSize="12sp"
+                    android:text="取消"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/class_start_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/center_rl"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:id="@+id/stast_tip_bg"
+                android:layout_width="78dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/center_rl"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8.5dp"
+        android:background="@drawable/line_buttom_bg"/>
+
+
+</LinearLayout>
+

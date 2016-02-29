@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_loginAndRegister_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_loginAndRegister_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_loginAndRegister_title" >
+
+        <LinearLayout
+            android:id="@+id/lc_title_userlr"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/lc_userlogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="登录"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/lc_userregister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="注册"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <cn.ledoing.view.LCSlideShowView
+            android:id="@+id/lc_slideshowview_loginAndRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lc_title_userlr" />
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_slideshowview_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_loginAndRegister_title" >
+    </cn.ledoing.view.LCNoNetWork>
+    <RelativeLayout
+        android:id="@+id/lc_login_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/login_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/quan" />
+
+            <TextView
+                android:id="@+id/lc_login_downtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_bg"
+                android:layout_centerInParent="true"
+                android:text="正在更新"
+                android:textColor="#05B9CA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

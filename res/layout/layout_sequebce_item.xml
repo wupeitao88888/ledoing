@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远近"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/secondary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/current_position"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/title"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/home_current_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="当前位置："
+                    android:textColor="#FF45454E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/home_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/home_current_position"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/home_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:text="刷新"
+                    android:textColor="#FFACACB4"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/gray" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/center_title"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/center_top"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.4dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/city_re"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/allcity_center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:text="城市"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/city_text_right"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/allcity_center"
+                            android:background="@drawable/text_right" />
+
+                        <TextView
+                            android:id="@+id/city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/allcity_center"
+                            android:layout_centerHorizontal="true"
+                            android:text="北京"
+                            android:textColor="#FFA1A1A1"
+                            android:textSize="9dp" />
+
+                        <View
+                            android:layout_width="0.8dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#FFCECECE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/scope_re"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/scope_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:text="范围"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/scope_text_right"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/scope_title"
+                            android:background="@drawable/text_right" />
+
+                        <TextView
+                            android:id="@+id/scope"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/scope_title"
+                            android:layout_centerHorizontal="true"
+                            android:text="全城"
+                            android:textColor="#FFA1A1A1"
+                            android:textSize="9dp" />
+
+                        <View
+                            android:layout_width="0.8dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#FFCECECE" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/order_re"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/order_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:text="顺序"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/order_text_right"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@+id/order_title"
+                            android:background="@drawable/text_right" />
+
+                        <TextView
+                            android:id="@+id/order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/order_title"
+                            android:layout_centerHorizontal="true"
+                            android:text="无排序"
+                            android:textColor="#FFA1A1A1"
+                            android:textSize="9dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ab.view.pullview.AbPullToRefreshView
+            android:id="@+id/home_attentionall_rV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/home_attentionall_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#fff"></ListView>
+        </com.ab.view.pullview.AbPullToRefreshView>
+
+        <LinearLayout
+            android:id="@+id/layout_li"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/city_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/select_lc_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.lc.widget.WheelView
+                        android:id="@+id/id_province"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></com.lc.widget.WheelView>
+
+                    <com.lc.widget.WheelView
+                        android:id="@+id/id_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></com.lc.widget.WheelView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scope_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+
+
+                <com.lc.widget.WheelView
+                    android:id="@+id/districts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"></com.lc.widget.WheelView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sort_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/endview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/nodate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFBABABA"
+            android:text="该地区暂时没有任何中心"
+            android:textSize="19dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_default"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="23.3dp"
+                android:layout_height="23.3dp"
+                android:id="@+id/title_img"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#40435B"
+                android:text="天文望远镜" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right|center"
+                android:text="已满/7人" />
+        </LinearLayout>
+
+        <cn.ledoing.view.NoScrollGridView
+            android:id="@+id/gridView2"
+            android:listSelector="@android:color/transparent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="36.7dp"
+            android:layout_marginRight="36.7dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4" />
+    </LinearLayout>
+</LinearLayout>

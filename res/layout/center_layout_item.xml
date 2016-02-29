@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="13.0dp"
+    android:background="#EFF0F5">
+
+    <ImageView
+        android:id="@+id/teacher_image"
+        android:layout_width="157dp"
+        android:layout_height="126dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/teacher_image"
+        android:textColor="#45454E" />
+
+    <cn.ledoing.view.LCRatingBar
+        android:id="@+id/teacher_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:layout_below="@+id/teacher_name"
+        style="@style/ratingbar_style" />
+
+    <TextView
+        android:id="@+id/teacher_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/teacher_ratingBar"
+        android:textColor="@color/black"/>
+</RelativeLayout>

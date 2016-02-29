@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/lc_text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号"
+            android:textColor="#050505"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/lc_phone_number"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/lc_text_phone"
+            android:background="@color/white"
+            android:hint="11手机号"
+            android:textCursorDrawable="@null"
+            android:phoneNumber="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C4C4C4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/lc_text_checknumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="验证码"
+            android:textColor="#050505"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/lc_phone_checknumber"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/lc_phone_getchecknumber"
+            android:layout_toRightOf="@id/lc_text_checknumber"
+            android:background="@color/white"
+            android:textCursorDrawable="@null"
+            android:hint="短信验证码"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lc_phone_getchecknumber"
+            android:layout_width="93dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/logon_yanzheng"
+            android:text="获取验证码"
+            android:textColor="@drawable/title_bar"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C4C4C4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/lc_text_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="设置密码"
+            android:textColor="#050505"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/lc_phone_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/lc_text_pw"
+            android:textCursorDrawable="@null"
+            android:background="@color/white"
+            android:hint="6-16位密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C4C4C4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/lc_text_repw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确认密码"
+            android:textColor="#050505"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/lc_phone_repw"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/lc_text_repw"
+            android:background="@color/white"
+            android:hint="确认密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C4C4C4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <Button
+            android:id="@+id/lc_phone_submit"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/blue_btn_selector"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D1D1D1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155.7dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/center_detail_item_selector">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="23.3dp"
+            android:text="2015-09-02"
+            android:textColor="#6C6C6C"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time"
+            android:layout_alignStart="@+id/time"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="3.3dp"
+            android:textColor="#6C6C6C"
+            android:text="9：00上课 10:30下课"
+            android:textSize="26.7sp" />
+
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/distance"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/distance"
+            android:layout_toRightOf="@+id/distance"
+            android:text="剩余2空位"
+            android:textColor="#6C6C6C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/distance"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/person"
+            android:layout_toRightOf="@+id/person"
+            android:text="王艳丽老师"
+            android:textColor="#6C6C6C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/distance"
+            android:layout_alignStart="@+id/distance"
+            android:layout_below="@+id/distance"
+            android:layout_marginBottom="23.7dp"
+            android:layout_marginTop="6.7dp"
+            android:text="市场价："
+            android:textColor="#989898"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/start_time"
+            android:layout_alignStart="@+id/start_time"
+            android:layout_below="@+id/start_time"
+            android:layout_marginTop="6.7dp"
+            android:text="03天20小时后预约截止"
+            android:textColor="#6C6C6C"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/order"
+            android:layout_width="82dp"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="3.3dp"
+             />
+
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginLeft="13.3dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="会员价："
+            android:textColor="#989898"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/number1"
+            android:layout_toEndOf="@+id/number1"
+            android:layout_toRightOf="@+id/number1"
+            android:text="¥320"
+            android:textColor="#F5A623"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥110"
+            android:id="@+id/textView3"
+            android:textColor="#6C6C6C"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/number"
+            android:layout_toRightOf="@+id/number"
+            android:layout_toEndOf="@+id/number" />
+
+    </RelativeLayout>
+
+</LinearLayout>

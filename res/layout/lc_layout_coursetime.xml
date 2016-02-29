@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+
+    android:orientation="horizontal">
+
+
+
+    <RelativeLayout
+        android:id="@+id/Lc_mecourse_residueCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/Lc_mecourse_leftResidueCourseImage"
+            android:layout_width="53.0dp"
+            android:layout_height="53.0dp"
+            android:background="@drawable/surplus_class"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/Lc_mecourse_leftResidueCourse"
+            style="@style/course_textview_money"
+            android:layout_alignTop="@id/Lc_mecourse_leftResidueCourseImage"
+            android:layout_toRightOf="@id/Lc_mecourse_leftResidueCourseImage"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/Lc_mecourse_leftCourseTitle"
+            style="@style/course_textview_title"
+            android:layout_below="@id/Lc_mecourse_leftResidueCourse"
+            android:layout_toRightOf="@+id/Lc_mecourse_leftResidueCourseImage"
+            android:layout_marginRight="15dp"
+            android:text="剩余课时" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Lc_mecourse_giveCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/Lc_mecourse_giveCourseImage"
+            android:layout_width="53.0dp"
+            android:layout_height="53.0dp"
+            android:background="@drawable/give_class"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/Lc_mecourse_rightGiveCourse"
+            style="@style/course_textview_money"
+            android:layout_alignTop="@id/Lc_mecourse_giveCourseImage"
+            android:layout_toRightOf="@id/Lc_mecourse_giveCourseImage"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/Lc_mecourse_rightGiveTitle"
+            style="@style/course_textview_title"
+            android:layout_below="@id/Lc_mecourse_rightGiveCourse"
+            android:layout_toRightOf="@+id/Lc_mecourse_giveCourseImage"
+            android:layout_marginRight="15dp"
+            android:text="赠送课时" />
+
+    </RelativeLayout>
+</LinearLayout>
+

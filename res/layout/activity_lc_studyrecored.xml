@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_studycalss_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lc_studycalss_title" >
+
+        <LinearLayout
+            android:id="@+id/lc_studycalss_stitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/left_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/q" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/left_icon"
+                        android:layout_centerVertical="true"
+                        android:text="任务"
+                        android:textColor="@color/selet_title"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:id="@+id/right_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/w" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/right_icon"
+                            android:layout_centerVertical="true"
+                            android:text="状态"
+                            android:textColor="@color/selet_title"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.ab.view.pullview.AbPullToRefreshView
+            android:id="@+id/lc_history_pullto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lc_studycalss_stitle"
+            android:background="@color/theme_bg" >
+
+            <ListView
+                android:id="@+id/lc_studyrecored_ListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000" />
+        </com.ab.view.pullview.AbPullToRefreshView>
+
+        <RelativeLayout
+            android:id="@+id/lc_studyrecored_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#edecec"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/lc_studyrecored_nodate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/study_record" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_study_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_studycalss_title" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

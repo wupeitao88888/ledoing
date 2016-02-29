@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/startall"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/star1"
+        style="@style/StyleRatingBar"
+        android:background="@drawable/start_normal" />
+
+    <ImageView
+        android:id="@+id/star2"
+        style="@style/StyleRatingBar"
+        android:background="@drawable/start_normal" />
+
+    <ImageView
+        android:id="@+id/star3"
+        style="@style/StyleRatingBar"
+        android:background="@drawable/start_normal" />
+
+    <ImageView
+        android:id="@+id/star4"
+        style="@style/StyleRatingBar"
+        android:background="@drawable/start_normal" />
+
+    <ImageView
+        android:id="@+id/star5"
+        style="@style/StyleRatingBar"
+        android:background="@drawable/start_normal" />
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_phone_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/lc_phone_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_phone_title" >
+
+        <TextView
+            android:id="@+id/tost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/lc_update_toast"
+            android:textColor="#838282"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/lc_new_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tost"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/selet_title" />
+
+            <EditText
+                android:id="@+id/lc_new_edphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="@string/lc_new_phone"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_send_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/top_dialog"
+                android:layout_width="230dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/quan" />
+
+                <TextView
+                    android:id="@+id/uploading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="确认手机号"
+                    android:textColor="#05B9CA"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/send_text"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uploading"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:text="确认手机号确认手机号确认手机号确认手机号确认手机号确认手机号"
+                    android:textColor="#A2A2A2"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#B0B0B0" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/top_dialog"
+                android:layout_below="@id/top_dialog"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/lc_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#B0B0B0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="取消"
+                        android:textColor="#727272"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lc_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="确定"
+                        android:textColor="#0FBCCC"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <cn.ledoing.view.LCNoNetWork
+        android:id="@+id/lc_phone_nonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/lc_phone_title" >
+    </cn.ledoing.view.LCNoNetWork>
+
+</RelativeLayout>

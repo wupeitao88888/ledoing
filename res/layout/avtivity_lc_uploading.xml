@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.ledoing.view.LCTitleBar
+        android:id="@+id/lc_uploading_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </cn.ledoing.view.LCTitleBar>
+
+    <ImageView
+        android:id="@+id/lc_uploading_imagedefault"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/lc_uploading_title"
+        android:scaleType="fitXY"
+        android:background="@drawable/uploading_default" />
+
+    <RelativeLayout
+        android:id="@+id/lc_uploading_info"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/lc_uploading_imagedefault" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#98979B"
+            android:text="您可以将您的作品拍摄上传以便和更多地用户分享。上传后您可以通过点击“我”查看已上传作品，也可以去“发现”查看更多有趣的作品。"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#C4C4C4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_uploading_up"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lc_uploading_info"
+
+        android:background="@drawable/pattern" >
+
+        <ImageView
+            android:id="@+id/lc_uploading_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/uploadworks" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_uploading_chose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#50000000"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/lc_up"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_above="@+id/lc_uploading_quit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lc_uploading_photo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/lc_question_bg_select" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="相册"
+                    android:textColor="@drawable/jxb_text_normal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/linse"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#C4C4C4" />
+
+            <RelativeLayout
+                android:id="@+id/lc_uploading_creame"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/lc_question_bg_select" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="相机"
+                    android:textColor="@drawable/jxb_text_normal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_uploading_quit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/lc_question_bg_select" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消"
+                android:textColor="@drawable/jxb_text_normal"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lc_uploading_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#55000000">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/quan" />
+
+            <TextView
+                android:id="@+id/uploading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login"
+                android:layout_centerInParent="true"
+                android:text="正在上传"
+                android:textColor="#05B9CA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

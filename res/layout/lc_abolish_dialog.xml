@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="580dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/lc_dialog_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignRight="@+id/Lc_dialog_warning"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/close" />
+
+            <RelativeLayout
+                android:id="@+id/Lc_dialog_warning"
+                android:layout_width="match_parent"
+                android:layout_height="28.8dp"
+                android:layout_below="@+id/lc_dialog_cancel"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/title_bar">
+
+                <ImageView
+                    android:id="@+id/Lc_dialog_warningimage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/plaint" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/Lc_dialog_warningimage"
+                    android:text="@string/dialog_warning"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Lc_dialog_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Lc_dialog_warning"
+                android:layout_below="@+id/Lc_dialog_warning"
+                android:layout_marginLeft="26.6dp"
+                android:layout_marginTop="22.6dp"
+                android:text="@string/dialog_reason"
+                android:textColor="@drawable/title_bar"
+                android:textSize="15dp" />
+
+
+
+            <ListView
+                android:id="@+id/Lc_dialog_reasonChose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Lc_dialog_reason"></ListView>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

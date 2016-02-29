@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ledoing.activity.LCWelcome" >
+
+    <ImageView
+        android:id="@+id/lc_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome" />
+
+    <RelativeLayout
+        android:id="@+id/lc_wlcome_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/quan" />
+
+            <TextView
+                android:id="@+id/lc_wlcome_downloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login"
+                android:layout_centerInParent="true"
+                android:text="正在更新"
+                android:textColor="#05B9CA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
